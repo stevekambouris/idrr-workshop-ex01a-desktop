@@ -11,7 +11,7 @@ This Docker image is based on [rocker/tidyverse:3.6.0](https://hub.docker.com/la
 2. In the Docker terminal (or another terminal of your choice), navigate to the folder containing the files from this repository.
 3. In the terminal, type the following command: `docker build -t idrr-example01a:R3.6.0 .`
    - (Note that the final dot `.` is important: it indicates that docker should use the files in the current folder to build an image.)
-   - (Also note that you don't _have_ to call the image `idrr-example01a`, or use the tag `R3.6.0`.)
+   - (Also note that you don't _have_ to call the image `idrr-example01a`, or use the tag `R3.6.0` - I have done this to be clear and unambiguous about what this Docker image represents.)
 4. Confirm that the image has been built, by looking for it in the list of local images in Docker Desktop.
 5. In the terminal, type of the following command: `docker run -p 8787:8787 -e PASSWORD=yourpassword idrr-example01a:R3.6.0`
    - (Note that you should change `yourpassword` to a password of your choice, whether `hunter2`, `12345`, or `CorrectHorseBatteryStaple`.)
